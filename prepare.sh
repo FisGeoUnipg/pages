@@ -9,9 +9,9 @@ if [ ! -d "ssl/pages.fisgeo.unipg.it" ]; then
 fi
 
 if [ ! -f "ssl/pages.fisgeo.unipg.it/fullchain.pem" ]; then
-	cp -a /ssl/pages.fisgeo.unipg.it/fullchain.pem ssl/pages.fisgeo.unipg.it/fullchain.pem || exit 0
+	cp -a $HOME/ssl/pages.fisgeo.unipg.it/fullchain.pem ssl/pages.fisgeo.unipg.it/fullchain.pem || exit 0
 fi
 
 if [ ! -f "ssl/pages.fisgeo.unipg.it/privkey.pem" ]; then
-	cp -a /ssl/pages.fisgeo.unipg.it/privkey.pem ssl/pages.fisgeo.unipg.it/privkey.pem || exit 0
+	cp -a $HOME/ssl/pages.fisgeo.unipg.it/privkey.pem ssl/pages.fisgeo.unipg.it/privkey.pem || exit 0
 fi
