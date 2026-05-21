@@ -18,6 +18,7 @@ fi
 
 cd static-html-directory
 
+rm -rf duranti
 git clone https://github.com/FisGeoUnipg/duranti.git
 rm -rf duranti/Makefile
 rm -rf duranti/README.md
