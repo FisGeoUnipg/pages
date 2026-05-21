@@ -16,5 +16,14 @@ if [ ! -f "ssl/pages.fisgeo.unipg.it/privkey.pem" ]; then
 	cp -a $HOME/ssl/pages.fisgeo.unipg.it/privkey.pem ssl/pages.fisgeo.unipg.it/privkey.pem || exit 0
 fi
 
+cd static-html-directory
+
+git clone https://github.com/FisGeoUnipg/duranti.git
+rm -rf duranti/Makefile
+rm -rf duranti/README.md
+rm -rf duranti/.git*
+
+cd ..
+
 find static-html-directory -type f -exec chmod 644 {} \;
 find static-html-directory -type d -exec chmod 755 {} \;
