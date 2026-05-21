@@ -1,3 +1,1 @@
 # pages
-
-# TODO Finish this
