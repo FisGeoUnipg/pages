@@ -15,3 +15,6 @@ fi
 if [ ! -f "ssl/pages.fisgeo.unipg.it/privkey.pem" ]; then
 	cp -a $HOME/ssl/pages.fisgeo.unipg.it/privkey.pem ssl/pages.fisgeo.unipg.it/privkey.pem || exit 0
 fi
+
+find static-html-directory -type f -exec chmod 644 {} \;
+find static-html-directory -type d -exec chmod 755 {} \;
